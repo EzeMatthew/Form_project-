@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div id="container">
+    <div id="form">
+      <h1>Contact Us</h1>
+      <form id="myForm" action="/action_page.php">
+        <div class="form-row">
+          <div>
+            <label for="fname">First Name <span class="star">*</span> </label>
+          <input type="text" id="fname"  name="firstname" class="error">
+          <div class="errorMessage" id="firstname-error">This fleld is required</div>
+          </div>
+
+          <div>
+            <label for="lname">Last Name <span class="star">*</span> </label>
+          <input type="text" id="lname" name="lastname" class="" >
+          <div class="errorMessage" id="lastname-error">This fleld is required</div>
+          </div>
+        </div>
+
+        <label for="email">Email Adress <span class="star">*</span></label>
+        <input type="email" id="email" name="email">
+        <div class="errorMessage" id="email-error">Please enter a valid email address</div>
+
+        <label for="radio">Query Type<span class="star">*</span> </label> <br>
+        <div class="form-row">
+          <div class="radio_border">
+            <input type="radio" name="radiobtn" id="radio">
+            <label for="radio">General Enquiry</label> <br>
+          </div>
+  
+          <div class="radio_border">
+            <input type="radio" name="radiobtn" id="radio"> 
+            <label for="radio">Support Request</label> 
+          </div>
+        </div>
+        <div class="errorMessage" id="query-error">Please select query type</div>
+        
+
+        <label for="message">Message <span class="star">*</span> </label>
+        <textarea name="message" id="message"></textarea>
+        <div class="errorMessage" id="message-error">This fleld is required</div>
+
+        <input type="checkbox" name="checkbox" id="checkbox">
+        <label for="checkbox">I consent to bring contected by the team <span class="star">*</span> </label>
+        <div class="errorMessage" id="check-error">To submit this form consent to be contacted</div>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Message -->
+   <div class="Success_massage" id="submission-message">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21"><path fill="#fff" d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"/></svg>
+    <span>Message sent</span>
+    <p>Thanks for completing the form we'll be in touch soon</p>
+   </div>
+  <script src="form.js"></script>
+</body>
+
+</html>
